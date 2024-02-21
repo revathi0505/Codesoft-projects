@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url("../images/pexels-chan-walrus-958545.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(49, 101, 147);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container h1{
+    color: rgb(218, 194, 59);
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+h2{
+    color: rgb(171, 226, 43);
+}
+h1{
+    color: crimson;
+}
+navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    text-decoration-line: none;
+}
+a{
+    color: aquamarine;
+}
+.navbar ul li a:hover{
+    color: chartreuse;
+    cursor: pointer;
+    box-shadow: 0px 5px 50px rgb(251, 165, 6) inset;
+}
+h1,h3,p{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: auto;
+}
+label{
+   align-items: center;
+   color: crimson;
+   display: block;
+   margin-bottom: 5px;
+   font-size: medium;
+   padding: 1px;
+   margin-top: 0%;
+}
+input{
+      display: grid;
+      margin-bottom: 5px;
+      border: none;
+      border-radius: 10px;
+      height: 53px;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 3px;
+      border: none;
+      margin: 0 auto;
+      width: 25%;
+}
+button{
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: lightgreen;
+    height: 45px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    width: 8%;
+    background-color: lightseagreen;
+}
+button:hover{
+    background-color: antiquewhite;
+    font-size: 14px;
+}
+footer{
+    margin-top: 15%;
+    text-align: center;
+    background-color: antiquewhite;
+}
