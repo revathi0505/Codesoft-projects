@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+      body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+        background-color: rgb(29, 123, 123);
+        color: white;
+    }
+    #calculator{
+        max-width: 300px;
+        margin: auto;
+        border: 2px dotted red;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        background-color:dimgrey;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #2c2c2c;
+        color: white;
+    }
+
+    button{
+        
+        padding: 10px;
+        margin: 2px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: dimgrey;
+        color: azure;
+        transition: background-color 0.3s ease;
+        border: solid whitesmoke;
+    }
+    button:hover{
+        background-color: #f05102;
+    }
+    #equals{
+        background-color: #5cb85c;
+        color:white
+    }
+#equals.hover{
+        background-color: #4cae4c;    
+    }
+    #clear{
+        background-color: #d9534f;
+        color:white;
+    }
+    #clear.hover{
+        background-color: #c9302c;
+    }
+   </style>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div id="calculator">
+<input id="display" disabled>
+<br>
+<button onclick="appendToDisplay('1')">1</button>
+<button onclick="appendToDisplay('2')">2</button>
+<button onclick="appendToDisplay('3')">3</button>
+<button onclick="appendToDisplay('+')">+</button>
+<br>
+
+<button onclick="appendToDisplay('4')">4</button>
+<button onclick="appendToDisplay('5')">5</button>
+<button onclick="appendToDisplay('6')">6</button>
+<button onclick="appendToDisplay('-')">-</button>
+<br>
+
+<button onclick="appendToDisplay('7')">7</button>
+<button onclick="appendToDisplay('8')">8</button>
+<button onclick="appendToDisplay('9')">9</button>
+<button onclick="appendToDisplay('')"></button>
+<br>
+<button onclick="appendToDisplay('0')">0</button>
+
+<button onclick="appendToDisplay('/')">/</button>
+<button id="clear"  onclick="clearDisplay()">C</button>
+<button id="equals" onclick="calculateResult()">=</button>
+
+  </div>
+  <script src="../javascript/rev.js"></script>
+</body>
+</html>
